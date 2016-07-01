@@ -1,0 +1,24 @@
+.editing-item{
+	background: #0C0;
+}
+.list .edited label:after {
+	content: " edited";
+}	
+.list .completed label{
+	color: #a7b9c4;
+	text-decoration: line-through;
+}
+input[type="checkbox"]{
+	/*display: none;*/
+}
+input[type="checkbox"] + span {
+	display:  inline-block;
+	width: 19px;
+	height: 19px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked + span{
+	background-color: #00C
+}

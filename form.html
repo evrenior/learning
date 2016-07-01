@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма</title>
+</head>
+<body>
+	<form method="post" action="form.php" id="form">
+	<select name="veg[]" size="4"  multiple> 
+		<option value="Potatoe">Картошка</option>
+		<option value="Salad">Салат</option>
+		<option value="Carrot">Морковка</option>
+		<option value="Hren">Хрен</option>
+		<option value="Baklazan">Баклажан</option>
+	</select>
+	Цвет: <input type="color" name="color">
+	<input type="submit">
+	</form>	
+	<input type="text" name="text_out" form="form" required="required" placeholder="Ведите..." list="links">
+	<datalist id="links">
+		<option label="Denis" value="Denis">
+		<option lable="Hanna" value="Hanna">
+		<option lable="Ihar" value="Iharosha">
+	</datalist>
+</body>
+</html>

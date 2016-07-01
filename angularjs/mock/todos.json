@@ -1,0 +1,8 @@
+[
+	{"name":"clean"},
+	{"name":"read"},
+	{"name":"look"},
+	{"name":"fly"},
+	{"name":"win"},
+	{"name":"ride"}
+]
