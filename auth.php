@@ -2,7 +2,7 @@
 <?php
 	$conn = new mysqli("localhost", "root", "1237698", "denis");
 	if($conn->connect_error) die($conn->connect_error);
-			// Создание базы данных
+		// Создание базы данных
 		// $query = "CREATE TABLE users(
 		// name VARCHAR(32) NOT NULL,
 		// surname VARCHAR(32) NOT NULL,
