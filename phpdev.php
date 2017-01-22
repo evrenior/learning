@@ -1,5 +1,5 @@
-<?php	
-	//Check file for inheretance, mktime(), date(), time(), extract(), explode() 
+<?php
+//Check file for inheretance, mktime(), date(), time(), extract(), explode() 
     class igor{
 
         static $otchestvo;
