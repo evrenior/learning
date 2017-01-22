@@ -7,15 +7,16 @@
 </head>
 <body>
 	<?php
-		$conn = new mysqli('LOCALHOST', 'USER_NAME', 'PASSWORD', 'DATABASE_NAME');
+		$conn = new mysqli('localhost', 'root', '1237698', 'denis');
 		$query = "SELECT title from books order by title ASC";
 		$letters = array();
 		$result = $conn->query($query);
 		$rows = $result->num_rows;
+		$alphabet = '';
 		for($i = 0; $i < $rows; ++$i){
 			$result->data_seek($i);
 			$row = $result-> fetch_array(MYSQL_NUM);
-			$alphabet .= "<br>".check_symbol($row, $letters);
+			$alphabet .= "<br>". check_symbol($row, $letters);
 		}
 		echo "<br>";
 		$alphas = range("A", "Z");

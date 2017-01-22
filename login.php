@@ -1,7 +1,6 @@
-<!-- login.php Хранилище данных для подключения к Базе данных denis  -->
 <?php
+//Data for connections to db denis
 	$hn = 'localhost';
 	$un = 'root';
-	$pw = '1237698';
+	$pw = '111222333';
 	$db = 'denis';
-?>
