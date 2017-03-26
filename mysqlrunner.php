@@ -8,9 +8,10 @@
     <?php
         include_once('login.php');
         $conn = new mysqli($hn, $un, $pw, $db);
-        if($conn->connect_error) die($conn->connect_error);
-        $query = 'SELECT * FROM denis_table';
+        if ($conn->connect_error) die($conn->connect_error);
+        $query = 'SELECT * FROM `denis_table`S';
         $result = $conn->query($query);
+
         if (!$result) die($conn->error);
         $rows = $result->num_rows;
 
